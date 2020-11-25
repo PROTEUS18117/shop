@@ -2,7 +2,7 @@
 
 session_start();
 
-define('DB_name', 'ramil-shop');
+define('DB_name', 'shop');
 
 define('DB_user', 'root');
 

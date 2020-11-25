@@ -43,7 +43,7 @@ require_once "server/config.php";
             <div class="row">
                 <div class="col-sm-6">
                     <div class="logo">
-                        <h1><a href="index.php">e<span>Electronics</span></a></h1>
+                        <h1><a href="index.php">e<span>Books</span></a></h1>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -132,9 +132,9 @@ require_once "server/config.php";
 <?php foreach (Product::all() as $item): ?>
                             <div class="single-product">
                                 <div class="product-f-image">
-                                    <img src="<?php echo $item->image ?>" alt="">
+                                    <img class="h-100" src="<?php echo $item->image ?>" alt="">
                                     <div class="product-hover">
-                                        <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> в корзину</a>
+                                        <a href="test.php?add_cart=<?php echo $item->id ?>" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> в корзину</a>
                                         <a href="#" class="view-details-link"><i class="fa fa-link"></i>подробнее...</a>
                                     </div>
                                 </div>
@@ -142,7 +142,7 @@ require_once "server/config.php";
                                 <h2><a href="#"><?php echo $item->name ?></a></h2>
 
                                 <div class="product-carousel-price">
-                                    <ins><?php echo $item->price ?>
+                                    <ins><?php echo $item->price ?> Руб.
                                 </div>
                             </div>
                             <?php endforeach; ?>

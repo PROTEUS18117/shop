@@ -43,7 +43,7 @@ require_once "server/config.php";
         <div class="row">
             <div class="col-sm-6">
                 <div class="logo">
-                    <h1><a href="index.php">e<span>Electronics</span></a></h1>
+                    <h1><a href="index.php">e<span>Books</span></a></h1>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -151,8 +151,12 @@ require_once "server/config.php";
                     <div class="cart-collaterals">
 
 
-                        <nav>Итоговая цена:<?php echo $_SESSION['total'] ?> Руб.<a href="#"><input type="submit"
-                         value="Оформить заказ"name="proceed" class="float-right checkout-button button alt wc-forward"></a>
+                        <nav>Итоговая цена:<?php echo $_SESSION['total'] ?> Руб.
+
+                            <form class="floatright" action="server/Order.php" method="post">
+                                <input class="mr-2" type="text" name="phone" placeholder="телефон">
+                                <button type="submit">отправить</button>
+                            </form>
                         </nav>
                     </div>
                 </div>

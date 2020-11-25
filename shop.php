@@ -44,7 +44,7 @@ require_once "server/config.php";
         <div class="row">
             <div class="col-sm-6">
                 <div class="logo">
-                    <h1><a href="index.php">e<span>Electronics</span></a></h1>
+                    <h1><a href="index.php">e<span>Books</span></a></h1>
                 </div>
             </div>
 

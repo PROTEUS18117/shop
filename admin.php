@@ -42,7 +42,7 @@ require_once "server/config.php";
         <div class="row">
             <div class="col-sm-6">
                 <div class="logo">
-                    <h1><a href="index.php">e<span>Electronics</span></a></h1>
+                    <h1><a href="index.php">e<span>Books</span></a></h1>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -89,7 +89,7 @@ require_once "server/config.php";
 <div class="container mt-3">
 
 
-    <?php foreach (Order::all() as $order): ?>
+    <?php foreach (Order::all() as $order):?>
     <div><b>Заявка №<?php echo $order->id ?></b></div>
     <br>
     <table cellspacing="0" class="shop_table cart  ">
